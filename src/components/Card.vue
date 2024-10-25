@@ -5,6 +5,9 @@
       <p><strong>Hora:</strong> {{ data.hora }}</p>
       <p><strong>Motivo:</strong> {{ data.motivo }}</p>
       <p><strong>Gravedad:</strong> {{ data.gravedad }}</p>
+      
+      <!-- Botón para eliminar la tarjeta -->
+      <button @click="removeCard">Eliminar</button>
     </div>
   </template>
   
@@ -24,7 +27,7 @@
     },
     watch: {
       data: {
-        immediate: true, // Ejecuta el watcher al inicio, cuando se recibe el prop
+        immediate: true,
         handler(newData) {
           this.setBackgroundColor(newData.gravedad);
         },
@@ -40,6 +43,10 @@
           this.backgroundColor = "lightcoral";
         }
       },
+      removeCard() {
+        // Emite el evento `removeCard` al componente padre
+        this.$emit("removeCard", this.data.id);
+      },
     },
   };
   </script>
@@ -51,6 +58,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
   }
-  </style>
   
+  button {
+    margin-top: 10px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  </style>
   

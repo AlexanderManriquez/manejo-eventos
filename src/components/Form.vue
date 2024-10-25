@@ -29,7 +29,7 @@
     </form>
 
     <div class="button">
-        <button :disabled="!isFormComplete">Agregar</button>
+        <button :disabled="!isFormComplete" @click="submitForm">Agregar</button>
     </div>
   </div>
 </template>
