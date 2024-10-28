@@ -1,5 +1,22 @@
-# Vue 3 + Vite
+# Administrador de citas médicas
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+*En este proyecto, debimos crear un administrador de citas médicas que funcione de manera reactiva y permita agregar y eliminar las citas de manera inmediata.*
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+  ⚕️ Para agendar una cita debemos llenar un formulario, el que recoje los datos ingresados por el usuario.
+
+  ✖️ Para eliminar una cita, debemos pinchar el botón indicado para eso.
+
+  🚦La tarjeta de la cita se mostrará de diferente color según la gravedad del diagnóstico.
+
+
+**Para la construcción de esta página se utilizó:**
+
+  ▶️ <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+  
+  ▶️ HTML5, CSS3 y JavaScript
+
+  ▶️ Vue.js
+
+Para conocer y probar el proyecto, visita el siguiente enlace:
+
+  :chains: <a href="https://manejo-eventos.vercel.app/">Administrador de citas médicas</a>
